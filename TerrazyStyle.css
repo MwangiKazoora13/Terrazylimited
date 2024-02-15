@@ -307,10 +307,11 @@ a{
     height: 75vh;
     padding: 0 2rem;
 }
-.contact-section-header > h2 {
-    font-size: 6rem;
-  }
-
+.contact-section-header {
+    width:60%;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--secondary-color);
+}
 .icon{
     color:white;
     font-size: 50px;
