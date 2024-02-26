@@ -1,8 +1,14 @@
 :root{
     --main-background-color: #1B1D24;
-    --primary-color:#1d7906;
-    --secondary-color:#5D9D08;
-    --tertiary-color:#72EB3A;
+    --primary-color:#23989e;
+    --secondary-color:#00b1b4;
+    --tertiary-color:#28e4e7;
+    --complementary-color:#365A08;
+    /*
+    primary-#1d7906
+    secondary-#5D9D08
+    tertiary-#72EB3A
+    ;*/
 }
 *{
     margin: 0;
@@ -41,8 +47,7 @@ body{
     background-color: var(--main-background-color);
     overflow-x: hidden;
 }
-h1,
-h2{
+h1,h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-align: center;
@@ -132,7 +137,6 @@ nav a.active {
 }
 .nav-item{
     margin:25px 0;
-
 }
 .nav-menu.active{
     left:0;
@@ -200,8 +204,8 @@ a{
     padding:50px;
 }
 #recycle{
-    width:70vw;
-    height: 70vh;
+    width:60%;
+    height: 40%;
 }
 
 /*ABOUT US AND WHAT WE DO*/
@@ -264,7 +268,7 @@ a{
     margin-bottom: 6rem;
 }
 .impact{
-    background:#365A08;
+    background:var(--primary-color);
     border-radius: 8px;
     padding:1.4rem;
 }
@@ -303,7 +307,7 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 100vw;
     height: 75vh;
     padding: 0 2rem;
 }
@@ -333,6 +337,9 @@ a{
    transition: transform 0.4s ease-in-out;
 }
 .contact-details:hover{
+    color:var(--secondary-color);
+}
+.contact-details:hover{
     transform: translateY(9px);
 }
 
@@ -359,16 +366,5 @@ footer{
 }
 .social-icon:hover{
     transform: translateY(2px);
-}
-.linkedin:hover{
-    color:rgb(6, 67, 117);
-}
-.twitter:hover{
-    color:rgb(60, 148, 219);
-}
-.facebook:hover{
-    color:rgb(3, 47, 83);
-}
-.instagram:hover{
-    color:rgb(226, 8, 161);
+    color:var(--secondary-color);
 }
