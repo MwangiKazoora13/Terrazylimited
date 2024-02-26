@@ -207,7 +207,11 @@ a{
     width:60%;
     height: 40%;
 }
-
+@media(max-width:500px){
+    #recycle{
+        height: 25%;
+    }
+}
 /*ABOUT US AND WHAT WE DO*/
 #aboutus{
     height:80%; 
