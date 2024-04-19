@@ -4,31 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terrazy Limited</title>
-
-    <link rel="icon" href=
-"Terrazy Images/Terrazy Logo.jpg"
-          type="image/x-icon">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="icon" href="Terrazy Images/Terrazy Logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="TerrazyStyle.css">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link
-    rel="stylesheet"
+    <link rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-    crossorigin="anonymous"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-    rel="stylesheet"
-  />
+    crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap">
 </head>
 <body>
-
-
+  
 <!--HEADER-->
 <header>
       <a href="TerrazyHome.html"><img src="Terrazy Images/Terrazy Logo.jpg" alt="logo" id="logo"></a>
@@ -44,7 +34,7 @@
             <a href="#location" class="nav-link">Location</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact Us</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
       </ul>
       <div class="hamburger">
@@ -55,14 +45,37 @@
   </nav>
 </header>
 
-
   <!--HOME SECTION-->
   <section id="home">
         <div class="intro">
         <h1>Welcome to Terrazy</h1>
         <p class="sharp">Recycling Company</p>
         </div>
-        <img id="recycle" src="Terrazy Images/Bottlesandwrapers.jpg" alt="recycling"/>
+        <div class="container">
+          <div class="slider-wrapper">
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+              chevron_left
+            </button>
+            <ul class="image-list">
+              <img class="image-item" src="Terrazy Images/Bottlesandwrapers1.jpg" alt="img-1" />
+              <img class="image-item" src="Terrazy Images/plastic bottles1.jpg" alt="img-2" />
+              <img class="image-item" src="Terrazy Images/Recycling1.jpg" alt="img-3" />
+              <img class="image-item" src="Terrazy Images/sorted trash1.jpg" alt="img-4" />
+              <img class="image-item" src="Terrazy Images/Bottlesandwrapers1.jpg" alt="img-1" />
+              <img class="image-item" src="Terrazy Images/plastic bottles1.jpg" alt="img-2" />
+              <img class="image-item" src="Terrazy Images/Recycling1.jpg" alt="img-3" />
+              <img class="image-item" src="Terrazy Images/sorted trash1.jpg" alt="img-4" />
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+              chevron_right
+            </button>
+          </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+        </div>
   </section>
 
         <!--ABOUT US SECTION-->
@@ -146,31 +159,14 @@
             <a href="TerrazyHome.html" class="contact-details">
             <i class="fas fa-at at icon"></i>terrazylimited@gmail.com          
             </a>
-            <!--<a href="TerrazyHome.html" class="contact-details">
-            <i class="fas fa-mobile mobile icon"></i>+254 700 700 700            
-            </a>-->
+        
      </div>
   </section>
 
   <!--FOOTER SECTION-->
   <footer>
     <p>© Copyright TERRAZY LIMITED</p>
-    <!--<div class="social-icons-group">
-      </a>
-      <a href="TerrazyHome.html">
-        <i class="fab fa-facebook facebook social-icon"></i>                  
-      </a>  
-      <a href="TerrazyHome.html">
-        <i class="fab fa-instagram instagram social-icon"></i>                  
-      </a>      
-    </a>
-    <a href="TerrazyHome.html">
-      <i class="fab fa-linkedin-in linkedin social-icon"></i>
-    </a>                        
-    <a href="TerrazyHome.html">
-      <i class="fab fa-twitter twitter social-icon"></i>    
-    </a>
-    </div>-->
+    
     <p>All Rights Reserved Est.2023</p>
   </footer>
 
