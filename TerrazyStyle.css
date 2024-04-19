@@ -1,15 +1,23 @@
 :root{
     --main-background-color: #1B1D24;
-    --primary-color:#23989e;
-    --secondary-color:#00b1b4;
-    --tertiary-color:#28e4e7;
+    --primary-color:#72EB3A;
+    --secondary-color:#5D9D08;
+    --tertiary-color:#1d7906;
     --complementary-color:#365A08;
     /*
+    Green
     primary-#1d7906
     secondary-#5D9D08
     tertiary-#72EB3A
+
+    Blue
+    --primary-color:#23989e;
+    --secondary-color:#00b1b4;
+    --tertiary-color:#28e4e7;
     ;*/
 }
+
+/*MAJOR CSS Styles*/
 *{
     margin: 0;
     padding: 0;
@@ -72,7 +80,7 @@ img{
 
 /*HEADER SECTION*/
 header{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,7 +103,7 @@ header{
     align-items: center;
     left:-100%;
     top:20%;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     width:100%;
     text-align: center;
     transition: 0.5s;
@@ -203,15 +211,142 @@ a{
     margin-top:150px;
     padding:50px;
 }
-#recycle{
-    width:60%;
-    height: 40%;
-}
-@media(max-width:500px){
-    #recycle{
-        height: 25%;
+/*SLIDESHOW*/
+.container {
+    max-width: 1200px;
+    width: 85%;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+  }
+  
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: var(--tertiary-color);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slider-wrapper .slide-button:hover {
+    background: var(--primary-color);
+  }
+  
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+  
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4.5px;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: var(--tertiary-color);
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  
+  .scrollbar-thumb:hover{
+    background: var(--primary-color);
+  }
+
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8.5px;
+    top: -2px;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+  
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
     }
-}
+  
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .slider-wrapper .image-list .image-item {
+      width: 420px;
+      height: 330px;
+    }
+  
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+
 /*ABOUT US AND WHAT WE DO*/
 #aboutus{
     height:80%; 
@@ -224,7 +359,7 @@ a{
     border-bottom: 0.2rem solid var(--secondary-color);
   }
 .intro-text{
-    max-width: 740px;
+    max-width: 900px;
     margin: 0 auto 6rem auto;
 }
 @media (max-width: 28.75em) {
@@ -272,7 +407,7 @@ a{
     margin-bottom: 6rem;
 }
 .impact{
-    background:var(--primary-color);
+    background:var(--tertiary-color);
     border-radius: 8px;
     padding:1.4rem;
 }
